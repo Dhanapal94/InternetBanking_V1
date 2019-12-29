@@ -1,7 +1,7 @@
-2019-12-29 09:29:49,265 +0530 [main] INFO  (NewCustomerTest.java:47) - successfully passed login name
-2019-12-29 09:29:49,502 +0530 [main] INFO  (NewCustomerTest.java:49) - successfully passed password
-2019-12-29 09:29:54,588 +0530 [main] INFO  (NewCustomerTest.java:51) - successfully clicked login button
-2019-12-29 09:29:54,608 +0530 [main] INFO  (NewCustomerTest.java:62) - Login is valid- success
-2019-12-29 09:30:05,675 +0530 [main] INFO  (NewCustomerTest.java:83) - successfully registered new customer
-2019-12-29 09:30:13,054 +0530 [main] INFO  (NewCustomerTest.java:96) - came into logout flow
-2019-12-29 09:30:15,831 +0530 [main] INFO  (NewCustomerTest.java:98) - successfully clicked on logout
+2019-12-29 22:15:34,798 +0530 [main] INFO  (NewCustomerTest.java:47) - successfully passed login name
+2019-12-29 22:15:34,988 +0530 [main] INFO  (NewCustomerTest.java:49) - successfully passed password
+2019-12-29 22:15:36,646 +0530 [main] INFO  (NewCustomerTest.java:51) - successfully clicked login button
+2019-12-29 22:15:36,668 +0530 [main] INFO  (NewCustomerTest.java:62) - Login is valid- success
+2019-12-29 22:16:01,323 +0530 [main] INFO  (NewCustomerTest.java:83) - successfully registered new customer
+2019-12-29 22:16:27,360 +0530 [main] INFO  (NewCustomerTest.java:96) - came into logout flow
+2019-12-29 22:16:32,940 +0530 [main] INFO  (NewCustomerTest.java:98) - successfully clicked on logout

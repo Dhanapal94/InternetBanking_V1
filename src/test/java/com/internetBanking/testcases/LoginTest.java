@@ -28,6 +28,7 @@ public class LoginTest extends Base {
 		con =  new Readconfig();
 		driver = setupDriver();
 		driver.get(con.applicationURL());
+		
 	}
 	//@Parameters({"username"})
 	@Test(enabled=true)

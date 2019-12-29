@@ -29,6 +29,7 @@ public class LoginTestDataDrivenTest extends Base {
 	public void closeBrowser()
 	{
 		closeDriver();
+		driver=null;
 	}
 	@Test(dataProvider="LoginData")
 	public void logindataproviderTest(String usname,String pass) throws Exception
