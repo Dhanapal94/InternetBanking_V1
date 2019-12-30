@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\da4\eclipse-workspace\InternetbankingE2E\src\main\java\com\internetBanking\utilities\Readconfig.java
 C:\Users\da4\eclipse-workspace\InternetbankingE2E\src\main\java\com\internetBanking\pages\LogoutPage.java
 C:\Users\da4\eclipse-workspace\InternetbankingE2E\src\main\java\com\internetBanking\utilities\Reporting.java
@@ -5,3 +6,12 @@ C:\Users\da4\eclipse-workspace\InternetbankingE2E\src\main\java\com\internetBank
 C:\Users\da4\eclipse-workspace\InternetbankingE2E\src\main\java\com\internetBankings\testData\Base.java
 C:\Users\da4\eclipse-workspace\InternetbankingE2E\src\main\java\com\internetBanking\pages\LoginPage.java
 C:\Users\da4\eclipse-workspace\InternetbankingE2E\src\main\java\com\internetBanking\pages\NewCustomer.java
+=======
+C:\Users\Pavithra\Downloads\InternetbankingE2E\src\main\java\com\internetBanking\utilities\XLUtils.java
+C:\Users\Pavithra\Downloads\InternetbankingE2E\src\main\java\com\internetBanking\pages\LoginPage.java
+C:\Users\Pavithra\Downloads\InternetbankingE2E\src\main\java\com\internetBanking\pages\LogoutPage.java
+C:\Users\Pavithra\Downloads\InternetbankingE2E\src\main\java\com\internetBankings\testData\Base.java
+C:\Users\Pavithra\Downloads\InternetbankingE2E\src\main\java\com\internetBanking\utilities\Readconfig.java
+C:\Users\Pavithra\Downloads\InternetbankingE2E\src\main\java\com\internetBanking\pages\NewCustomer.java
+C:\Users\Pavithra\Downloads\InternetbankingE2E\src\main\java\com\internetBanking\utilities\Reporting.java
+>>>>>>> 62d1f656e8977f071172b532901f678195de67ec

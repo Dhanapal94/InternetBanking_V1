@@ -28,6 +28,7 @@ public class LoginTest extends Base {
 		con =  new Readconfig();
 		driver = setupDriver();
 		driver.get(con.applicationURL());
+<<<<<<< HEAD
 	}
 	@Parameters({"username"})
 	@Test(enabled=true)
@@ -36,6 +37,17 @@ public class LoginTest extends Base {
 		l = new LoginPage(driver);
 		//l.closeVideoAd();
 		l.setUserName(usname);
+=======
+		
+	}
+	//@Parameters({"username"})
+	@Test(enabled=true)
+	public void loginTest() throws InterruptedException
+	{
+		l = new LoginPage(driver);
+		//l.closeVideoAd();
+		l.setUserName(con.usernameValue());
+>>>>>>> 62d1f656e8977f071172b532901f678195de67ec
 		log.info("successfully passed login name");
 		l.setPassword(con.passwordValue());
 		log.debug("successfully passed password");
@@ -58,6 +70,10 @@ public class LoginTest extends Base {
 	public void tearDown()
 	{
 		closeDriver();
+<<<<<<< HEAD
+=======
+		driver=null;
+>>>>>>> 62d1f656e8977f071172b532901f678195de67ec
 	}
 	@AfterSuite
 	public void flushingReport()

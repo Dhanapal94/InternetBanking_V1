@@ -1,0 +1,3 @@
+com\internetBanking\testcases\LoginTest.class
+com\internetBanking\testcases\LoginTestDataDrivenTest.class
+com\internetBanking\testcases\NewCustomerTest.class

@@ -1,0 +1,45 @@
+--Maven commands to run in cli-------
+
+cd C:\Users\Pavithra\Downloads\InternetbankingE2E
+mvn clean install
+
+
+----GITU=GUB URL------
+
+https://github.com/Dhanapal94/InternetBanking_V1.git
+
+GIT Commands
+------------
+
+git init ----> will create a git repositry
+
+git remote add origin "https://github.com/Dhanapal94/InternetBanking_V1.git" ---> Connection between local and Remote repository established
+
+-----Adding the github config before commit to git------
+
+git config --global user.name "Dhanapal94"
+
+git config --global user.email "dhanapalinfocse@gmail.com"
+
+
+<-----Commit to GIT [Local Repository]---->
+
+git status---> To check files are ready to commit to git
+
+git add - A ---> To add all untracked Files to Staging area so once added it become tracked files
+
+git commit -m "This is my first commit" ---> Commiting tracked files from staging area to Git local repository so it become commited file 
+
+
+<-----Push to GITHUB [Remote Repository]----->
+
+git push -u origin master
+
+<----Pull a new file from GITHUB---->
+
+git pull origin master
+
+
+---> Unrelated histories
+
+git pull origin master --allow-unrelated-histories

@@ -35,6 +35,10 @@ public class NewCustomerTest  extends Base{
 	public void closeBrowser()
 	{
 		closeDriver();
+<<<<<<< HEAD
+=======
+		driver=null;
+>>>>>>> 62d1f656e8977f071172b532901f678195de67ec
 	}
 	@Test()
 	public void newCustomerTest() throws Exception

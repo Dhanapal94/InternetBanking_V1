@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 C:\Users\da4\eclipse-workspace\InternetbankingE2E\src\test\java\com\internetBanking\testcases\LoginTest.java
 C:\Users\da4\eclipse-workspace\InternetbankingE2E\src\test\java\com\internetBanking\testcases\NewCustomerTest.java
 C:\Users\da4\eclipse-workspace\InternetbankingE2E\src\test\java\com\internetBanking\testcases\LoginTestDataDrivenTest.java
+=======
+C:\Users\Pavithra\Downloads\InternetbankingE2E\src\test\java\com\internetBanking\testcases\LoginTestDataDrivenTest.java
+C:\Users\Pavithra\Downloads\InternetbankingE2E\src\test\java\com\internetBanking\testcases\NewCustomerTest.java
+C:\Users\Pavithra\Downloads\InternetbankingE2E\src\test\java\com\internetBanking\testcases\LoginTest.java
+>>>>>>> 62d1f656e8977f071172b532901f678195de67ec

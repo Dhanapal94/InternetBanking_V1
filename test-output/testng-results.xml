@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
@@ -31,10 +32,38 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
         <test-method status="PASS" signature="flushingReport()[pri:0, instance:com.internetBanking.testcases.LoginTest@3b088d51]" name="flushingReport" is-config="true" duration-ms="1222" started-at="2019-12-28T15:30:23 IST" finished-at="2019-12-28T15:30:24 IST">
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-12-29T21:55:53 IST" name="Default suite" finished-at="2019-12-29T21:58:00 IST" duration-ms="127420">
+    <groups>
+    </groups>
+    <test started-at="2019-12-29T21:55:53 IST" name="Default test" finished-at="2019-12-29T21:58:00 IST" duration-ms="127420">
+      <class name="com.internetBanking.testcases.LoginTest">
+        <test-method is-config="true" signature="creatingReport()[pri:0, instance:com.internetBanking.testcases.LoginTest@43301423]" started-at="2019-12-29T21:55:51 IST" name="creatingReport" finished-at="2019-12-29T21:55:53 IST" duration-ms="1565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatingReport -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.internetBanking.testcases.LoginTest@43301423]" started-at="2019-12-29T21:55:53 IST" name="setup" finished-at="2019-12-29T21:57:31 IST" duration-ms="98386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:0, instance:com.internetBanking.testcases.LoginTest@43301423]" started-at="2019-12-29T21:57:31 IST" name="loginTest" finished-at="2019-12-29T21:57:59 IST" duration-ms="28132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.internetBanking.testcases.LoginTest@43301423]" started-at="2019-12-29T21:57:59 IST" name="tearDown" finished-at="2019-12-29T21:58:00 IST" duration-ms="709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="flushingReport()[pri:0, instance:com.internetBanking.testcases.LoginTest@43301423]" started-at="2019-12-29T21:58:01 IST" name="flushingReport" finished-at="2019-12-29T21:58:01 IST" duration-ms="33" status="PASS">
+>>>>>>> 62d1f656e8977f071172b532901f678195de67ec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushingReport -->
       </class> <!-- com.internetBanking.testcases.LoginTest -->
+<<<<<<< HEAD
       <class name="com.internetBanking.testcases.LoginTestDataDrivenTest">
         <test-method status="PASS" signature="setup()[pri:0, instance:com.internetBanking.testcases.LoginTestDataDrivenTest@1786dec2]" name="setup" is-config="true" duration-ms="17228" started-at="2019-12-28T15:29:43 IST" finished-at="2019-12-28T15:30:00 IST">
           <reporter-output>
@@ -163,4 +192,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.internetBanking.testcases.LoginTestDataDrivenTest -->
     </test> <!-- Test(failed) -->
   </suite> <!-- Failed suite [Suite] -->
+=======
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> 62d1f656e8977f071172b532901f678195de67ec
 </testng-results>
