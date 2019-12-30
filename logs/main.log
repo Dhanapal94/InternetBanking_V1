@@ -1,0 +1,7 @@
+2019-12-28 18:34:08,159 +0530 [main] INFO  (NewCustomerTest.java:47) - successfully passed login name
+2019-12-28 18:34:08,332 +0530 [main] INFO  (NewCustomerTest.java:49) - successfully passed password
+2019-12-28 18:34:10,348 +0530 [main] INFO  (NewCustomerTest.java:51) - successfully clicked login button
+2019-12-28 18:34:10,384 +0530 [main] INFO  (NewCustomerTest.java:62) - Login is valid- success
+2019-12-28 18:34:28,560 +0530 [main] INFO  (NewCustomerTest.java:83) - successfully registered new customer
+2019-12-28 18:34:43,627 +0530 [main] INFO  (NewCustomerTest.java:96) - came into logout flow
+2019-12-28 18:34:52,647 +0530 [main] INFO  (NewCustomerTest.java:98) - successfully clicked on logout
