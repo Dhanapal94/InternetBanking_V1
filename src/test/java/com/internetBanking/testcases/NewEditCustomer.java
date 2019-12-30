@@ -2,48 +2,41 @@ package com.internetBanking.testcases;
 
 import java.io.IOException;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.internetBanking.pages.EditCustomer;
 import com.internetBanking.pages.LoginPage;
 import com.internetBanking.pages.LogoutPage;
 import com.internetBanking.pages.NewCustomer;
 import com.internetBanking.utilities.Readconfig;
-import com.internetBankings.testData.Base;
+import com.internetBankings.testData.*;
 
-public class NewCustomerTest  extends Base{
+public class NewEditCustomer extends Base{
 	WebDriver driver;
 	LoginPage l;
 	LogoutPage logout;
 	NewCustomer cust;
 	Readconfig con ;
-	@BeforeClass
+	EditCustomer editcust;
+	@BeforeTest
 	public void setup() throws IOException
 	{
 		con =  new Readconfig();
 		driver = setupDriver();
 		driver.get(con.applicationURL());
 	}
-	@AfterClass
-	public void closeBrowser()
-	{
-		closeDriver();
-		driver=null;
-	}
 	@Test()
-	public void newCustomerTest() throws Exception
+	public void combineNewEditTest() throws Exception
 	{
 		l = new LoginPage(driver);
 		logout = new LogoutPage(driver);
 		cust = new NewCustomer(driver);
+		editcust = new EditCustomer(driver);
 		String emailvalue = randomString()+"@gmail.com";
 		l.setUserName(con.usernameValue());
 		log.info("successfully passed login name");
@@ -92,16 +85,56 @@ public class NewCustomerTest  extends Base{
 
 		//closepopup Window	
 		l.closeVideoAd();
+	
+	//Edit customer
+	String customerIDValue = cust.generatedCustomerId();
+	System.out.println("Customer Id value generated is :"+customerIDValue);
+	String emailvalue1 = randomString()+"@gmail.com";
+	editcust.editCustomerClick();
+	editcust.setCustomerID(customerIDValue);
+	editcust.customerIDSubmit();
+	cust.clearAddress();
+	cust.setAddress("mylapore east coastal road");
+	cust.clearCity();
+	cust.setCity("Chennai");
+	cust.clearState();
+	cust.setState("Tamilnadu");
+	cust.clearPIN();
+	cust.setPIN("641049");
+	cust.clearMobileNumber();
+	cust.setMobileNumber("9655993280");
+	cust.clearEmail();
+	cust.setEmail(emailvalue1);
+	cust.submitButtonClick();
+	boolean alertcheck = alertPresent();
 
-		//Logout flow
-
-		log.info("came into logout flow");
-	    logout.logoutClick();	   
-	    log.info("successfully clicked on logout");
-	    driver.switchTo().alert().accept();	
-	    String logoutExpected= "Guru99 Bank Home Page";
-	    Assert.assertEquals(driver.getTitle(), logoutExpected,"Failed to Logout after added a new customer");
-
+	//Verification-Result
+	if(alertcheck)
+	{
+		log.error("Unexpected alert encountered - Customer details are not updated succcessfully-Failed ==>"+driver.switchTo().alert().getText());
+		driver.switchTo().alert().accept();
+		Assert.assertTrue(false,"Customer details are not updated succcessfully-Failed");
+	}
+	
+	boolean updateMsg = cust.checkCustomerRegisteredSuccessfully("Customer details updated Successfully!!!");
+	if(updateMsg)
+	{
+		Assert.assertTrue(true);
+		log.info("Customer Details updated Successfully");
 	}
 
+	else
+	{
+		log.error("Page is not responding after submit click ");
+		Assert.assertTrue(false);
+	}
+	logout.logoutClick();
+	driver.switchTo().alert().accept();
+}
+	@AfterTest
+	public void tearDown() throws IOException
+	{
+		driver.close();
+		driver=null;
+	}
 }

@@ -46,6 +46,12 @@ public class Readconfig {
 		String pword = prop.getProperty("password");
 		return pword;
 	}
+	public String customerID()
+	{
+		String customerid = prop.getProperty("customerId");
+		return customerid;
+	}
+	
 
 
 }

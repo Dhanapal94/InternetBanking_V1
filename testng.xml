@@ -6,11 +6,12 @@
 			class-name="com.internetBanking.utilities.Reporting" />
 	</listeners>
 	<parameter name="username" value="mngr239668" />
-	<test thread-count="5" name="Test">
+	<test thread-count="5" name="LoginTest">
 		<classes>
 			<class name="com.internetBanking.testcases.LoginTest" />
 			<class name="com.internetBanking.testcases.LoginTestDataDrivenTest" />
 			<class name="com.internetBanking.testcases.NewCustomerTest" />
+			<class name="com.internetBanking.testcases.EditCustomerTest" />
 		</classes>
-	</test> <!-- Test -->
+	</test>
 </suite> <!-- Suite -->

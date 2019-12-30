@@ -55,6 +55,9 @@ public class NewCustomer {
 	@FindBy(name="sub")
 	private WebElement submitButton;
 	
+	@FindBy(xpath="//td[text()='Customer ID']//following::td[1]")
+	private WebElement customerId;
+	
 	
 	public void newCustomerClick()
 	{
@@ -129,4 +132,35 @@ public class NewCustomer {
 		}
 	}
 
+	//Clear flow
+	public void clearAddress()
+	{
+		address.clear();
+	}
+	public void clearCity()
+	{
+		city.clear();
+	}
+	public void clearState()
+	{
+		state.clear();
+	}
+	public void clearPIN()
+	{
+		PIN.clear();
+	}
+	public void clearMobileNumber()
+	{
+		mobileNumber.clear();
+	}
+	public void clearEmail()
+	{
+	   emailID.clear();
+	}
+	
+	public String generatedCustomerId()
+	{
+		String cid = customerId.getText();
+		return cid;
+	}
 }
