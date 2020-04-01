@@ -10,6 +10,7 @@ import org.testng.annotations.*;
 import com.internetBanking.pages.LoginPage;
 import com.internetBanking.pages.LogoutPage;
 import com.internetBanking.utilities.Readconfig;
+import com.internetBanking.utilities.Reporting;
 import com.internetBanking.utilities.XLUtils;
 import com.internetBankings.testData.Base;
 
@@ -18,6 +19,12 @@ public class LoginTestDataDrivenTest extends Base {
 	LoginPage l;
 	LogoutPage logout;
 	Readconfig con ;
+	public static int count =1;
+	@BeforeSuite
+	public void creatingReport()
+	{
+		setExtent();
+	}
 	@BeforeClass
 	public void setup() throws IOException
 	{
@@ -51,7 +58,8 @@ public class LoginTestDataDrivenTest extends Base {
 			driver.switchTo().alert().accept();
 			log.error("Username or password is invalid - Alert found");
 		}
-		//Succcess Login
+		setRowcount(count);
+		count=count+1;
 		Assert.assertEquals(driver.getTitle(), expectedTitle,"Title is mismatched");
 		log.info("Login is valid- success");
 		logout.logoutClick();
@@ -63,9 +71,13 @@ public class LoginTestDataDrivenTest extends Base {
 	{
 		String excelPath = System.getProperty("user.dir")+"\\src\\main\\java\\com\\internetBankings\\testData\\Testdata.xlsx";
 		int rowcount = XLUtils.getRowCount(excelPath, "Sheet1");
-		int colcount = XLUtils.getCellCount(excelPath, "Sheet1", 1);
+		int colcount = XLUtils.getCellCount(excelPath, "Sheet1", 2);
 		System.out.println("Column count"+colcount);
 		System.out.println("row count"+rowcount);
+		if(colcount>2)
+		{
+			colcount=colcount-1;
+		}
 		Object data[][] = new Object[rowcount][colcount];
 		for(int i=1;i<=rowcount;i++)
 		{
@@ -75,6 +87,11 @@ public class LoginTestDataDrivenTest extends Base {
 			}
 		}
 		return data;
+	}
+	@AfterSuite
+	public void flushingReport()
+	{
+		removeExtent();
 	}
 
 }

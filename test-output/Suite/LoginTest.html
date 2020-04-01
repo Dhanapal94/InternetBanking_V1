@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>6/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Dec 30 19:26:38 IST 2019</td>
+<td>Started on:</td><td>Wed Apr 01 16:39:37 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>123 seconds (123321 ms)</td>
+<tr><td>Total time:</td><td>200 seconds (200467 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,53 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest()'><b>logindataproviderTest</b><br>Test class: com.internetBanking.testcases.LoginTestDataDrivenTest<br>Parameters: mngr238114 ,  yrAqebE</td>
-<td><div><pre>java.lang.AssertionError: Title is mismatched expected [Guru99 Bank Manager HomePage] but found [Guru99 Bank Home Page]
-	at com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest(LoginTestDataDrivenTest.java:55)
+<td title='com.internetBanking.testcases.EditCustomerTest.editCustomerTest()'><b>editCustomerTest</b><br>Test class: com.internetBanking.testcases.EditCustomerTest</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Customer does not exist!!}
+  (Session info: chrome=80.0.3987.149): Customer does not exist!!
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;LHTU05CG4472DYW&apos;, ip: &apos;10.21.226.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\da4\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:62067}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 349f4928a9c9137d70f038babd88881e
+*** Element info: {Using=xpath, value=//td[text()=&apos;Address&apos;]//following::textarea[1]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:123)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy13.clear(Unknown Source)
+	at com.internetBanking.pages.NewCustomer.clearAddress(NewCustomer.java:138)
+	at com.internetBanking.testcases.EditCustomerTest.editCustomerTest(EditCustomerTest.java:58)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1490985125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1490985125'><pre>java.lang.AssertionError: Title is mismatched expected [Guru99 Bank Manager HomePage] but found [Guru99 Bank Home Page]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest(LoginTestDataDrivenTest.java:55)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1491676195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1491676195'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Customer does not exist!!}
+  (Session info: chrome=80.0.3987.149): Customer does not exist!!
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;LHTU05CG4472DYW&apos;, ip: &apos;10.21.226.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\da4\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:62067}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 349f4928a9c9137d70f038babd88881e
+*** Element info: {Using=xpath, value=//td[text()=&apos;Address&apos;]//following::textarea[1]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:123)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy13.clear(Unknown Source)
+	at com.internetBanking.pages.NewCustomer.clearAddress(NewCustomer.java:138)
+	at com.internetBanking.testcases.EditCustomerTest.editCustomerTest(EditCustomerTest.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -115,20 +151,20 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>4</td>
-<td>com.internetBanking.testcases.LoginTestDataDrivenTest@3b088d51</td></tr>
+<td>6</td>
+<td>com.internetBanking.testcases.EditCustomerTest@74650e52</td></tr>
 <tr>
-<td title='com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest()'><b>logindataproviderTest</b><br>Test class: com.internetBanking.testcases.LoginTestDataDrivenTest<br>Parameters: mngr239669, jEnunUma</td>
+<td title='com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest()'><b>logindataproviderTest</b><br>Test class: com.internetBanking.testcases.LoginTestDataDrivenTest<br>Parameters: mngr239668, Dhana@01</td>
 <td><div><pre>java.lang.AssertionError: Title is mismatched expected [Guru99 Bank Manager HomePage] but found [Guru99 Bank Home Page]
-	at com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest(LoginTestDataDrivenTest.java:55)
+	at com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest(LoginTestDataDrivenTest.java:63)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1481594007", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1481594007'><pre>java.lang.AssertionError: Title is mismatched expected [Guru99 Bank Manager HomePage] but found [Guru99 Bank Home Page]
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace215478702", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace215478702'><pre>java.lang.AssertionError: Title is mismatched expected [Guru99 Bank Manager HomePage] but found [Guru99 Bank Home Page]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:575)
-	at com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest(LoginTestDataDrivenTest.java:55)
+	at com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest(LoginTestDataDrivenTest.java:63)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -158,7 +194,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>3</td>
+<td>6</td>
 <td>com.internetBanking.testcases.LoginTestDataDrivenTest@3b088d51</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -174,30 +210,30 @@ function toggleAllBoxes() {
 <td>3</td>
 <td>com.internetBanking.testcases.LoginTest@53f65459</td></tr>
 <tr>
-<td title='com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest()'><b>logindataproviderTest</b><br>Test class: com.internetBanking.testcases.LoginTestDataDrivenTest<br>Parameters: mngr239667, sygavAr</td>
+<td title='com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest()'><b>logindataproviderTest</b><br>Test class: com.internetBanking.testcases.LoginTestDataDrivenTest<br>Parameters: mngr252799, uzAqydA</td>
 <td></td>
-<td>4</td>
+<td>7</td>
 <td>com.internetBanking.testcases.LoginTestDataDrivenTest@3b088d51</td></tr>
 <tr>
-<td title='com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest()'><b>logindataproviderTest</b><br>Test class: com.internetBanking.testcases.LoginTestDataDrivenTest<br>Parameters: mngr239668, Dhana@01</td>
+<td title='com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest()'><b>logindataproviderTest</b><br>Test class: com.internetBanking.testcases.LoginTestDataDrivenTest<br>Parameters: mngr252800, EjEbEza</td>
 <td></td>
-<td>6</td>
+<td>7</td>
 <td>com.internetBanking.testcases.LoginTestDataDrivenTest@3b088d51</td></tr>
 <tr>
-<td title='com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest()'><b>logindataproviderTest</b><br>Test class: com.internetBanking.testcases.LoginTestDataDrivenTest<br>Parameters: mngr239670, qaqAgaj</td>
+<td title='com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest()'><b>logindataproviderTest</b><br>Test class: com.internetBanking.testcases.LoginTestDataDrivenTest<br>Parameters: mngr252801, pyhasAr</td>
 <td></td>
-<td>3</td>
+<td>8</td>
+<td>com.internetBanking.testcases.LoginTestDataDrivenTest@3b088d51</td></tr>
+<tr>
+<td title='com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest()'><b>logindataproviderTest</b><br>Test class: com.internetBanking.testcases.LoginTestDataDrivenTest<br>Parameters: mngr252803, muqAvuq</td>
+<td></td>
+<td>10</td>
 <td>com.internetBanking.testcases.LoginTestDataDrivenTest@3b088d51</td></tr>
 <tr>
 <td title='com.internetBanking.testcases.NewCustomerTest.newCustomerTest()'><b>newCustomerTest</b><br>Test class: com.internetBanking.testcases.NewCustomerTest</td>
 <td></td>
-<td>20</td>
+<td>27</td>
 <td>com.internetBanking.testcases.NewCustomerTest@1786dec2</td></tr>
-<tr>
-<td title='com.internetBanking.testcases.EditCustomerTest.newCustomerTest()'><b>newCustomerTest</b><br>Test class: com.internetBanking.testcases.EditCustomerTest</td>
-<td></td>
-<td>17</td>
-<td>com.internetBanking.testcases.EditCustomerTest@74650e52</td></tr>
 </table><p>
 </body>
 </html>

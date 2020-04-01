@@ -1,6 +1,0 @@
-2019-12-30 19:46:34,847 +0530 [main] INFO  (NewEditCustomer.java:42) - successfully passed login name
-2019-12-30 19:46:35,132 +0530 [main] INFO  (NewEditCustomer.java:44) - successfully passed password
-2019-12-30 19:46:37,748 +0530 [main] INFO  (NewEditCustomer.java:46) - successfully clicked login button
-2019-12-30 19:46:37,832 +0530 [main] INFO  (NewEditCustomer.java:57) - Login is valid- success
-2019-12-30 19:46:47,730 +0530 [main] INFO  (NewEditCustomer.java:78) - successfully registered new customer
-2019-12-30 19:47:02,011 +0530 [main] INFO  (NewEditCustomer.java:124) - Customer Details updated Successfully

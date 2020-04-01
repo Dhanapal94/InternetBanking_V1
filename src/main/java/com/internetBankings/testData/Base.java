@@ -33,6 +33,7 @@ public class Base  {
 	public static ExtentReports extent;
 	public static ExtentTest test;		
 	public Logger log; 
+	public static int rowCount;
 	String homeProject = System.getProperty("user.dir");
 	public  WebDriver setupDriver() throws IOException
 	{		
@@ -118,5 +119,15 @@ public class Base  {
 		String randomname = RandomStringUtils.randomAlphabetic(5);
 		return randomname;
 	}
+	
+	public static void setRowcount(int val) {
+		rowCount = val;
+		
+	}
+	
+	public int getRowcount() {
+		return rowCount;
+	}
+
 
 }
