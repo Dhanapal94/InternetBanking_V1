@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="username" value="mngr239668"/>
-  <listeners>
-    <listener class-name="com.internetBanking.utilities.Reporting"/>
-  </listeners>
-  <test thread-count="5" name="LoginTest(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.internetBanking.testcases.EditCustomerTest">
+      <class name="com.internetBanking.testcases.IDRS_Download">
         <methods>
-          <include name="editCustomerTest"/>
-          <include name="setup"/>
-          <include name="closeBrowser"/>
+          <include name="setUp"/>
+          <include name="IDRSDownload"/>
+          <include name="TearDown"/>
         </methods>
-      </class> <!-- com.internetBanking.testcases.EditCustomerTest -->
-      <class name="com.internetBanking.testcases.LoginTestDataDrivenTest">
-        <methods>
-          <include name="setup"/>
-          <include name="logindataproviderTest" invocation-numbers="2"/>
-          <include name="flushingReport"/>
-          <include name="closeBrowser"/>
-          <include name="creatingReport"/>
-        </methods>
-      </class> <!-- com.internetBanking.testcases.LoginTestDataDrivenTest -->
+      </class> <!-- com.internetBanking.testcases.IDRS_Download -->
     </classes>
-  </test> <!-- LoginTest(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

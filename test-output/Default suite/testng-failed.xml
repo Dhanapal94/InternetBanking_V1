@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.internetBanking.testcases.LoginTest">
+      <class name="com.internetBanking.testcases.IDRS_Download">
         <methods>
-          <include name="creatingReport"/>
-          <include name="setup"/>
-          <include name="loginTest"/>
-          <include name="tearDown"/>
-          <include name="flushingReport"/>
+          <include name="setUp"/>
+          <include name="IDRSDownload"/>
+          <include name="TearDown"/>
         </methods>
-      </class> <!-- com.internetBanking.testcases.LoginTest -->
+      </class> <!-- com.internetBanking.testcases.IDRS_Download -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

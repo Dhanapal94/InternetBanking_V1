@@ -8,44 +8,15 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">LoginTest</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">200,467</td><td></td><td></td></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">621,332</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.internetBanking.testcases.EditCustomerTest</td><td><a href="#m0">editCustomerTest</a></td><td rowspan="1">1585739567862</td><td rowspan="1">6402</td></tr><tr class="failedodd"><td rowspan="1">com.internetBanking.testcases.LoginTestDataDrivenTest</td><td><a href="#m1">logindataproviderTest</a></td><td rowspan="1">1585739458875</td><td rowspan="1">6994</td></tr><tr><th colspan="4">LoginTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.internetBanking.testcases.LoginTest</td><td><a href="#m2">loginTest</a></td><td rowspan="1">1585739407487</td><td rowspan="1">3393</td></tr><tr class="passedodd"><td rowspan="4">com.internetBanking.testcases.LoginTestDataDrivenTest</td><td><a href="#m3">logindataproviderTest</a></td><td rowspan="4">1585739474839</td><td rowspan="4">10986</td></tr><tr class="passedodd"><td><a href="#m4">logindataproviderTest</a></td></tr><tr class="passedodd"><td><a href="#m5">logindataproviderTest</a></td></tr><tr class="passedodd"><td><a href="#m6">logindataproviderTest</a></td></tr><tr class="passedeven"><td rowspan="1">com.internetBanking.testcases.NewCustomerTest</td><td><a href="#m7">newCustomerTest</a></td><td rowspan="1">1585739513706</td><td rowspan="1">27068</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.internetBanking.testcases.IDRS_Download</td><td><a href="#m0">IDRSDownload</a></td><td rowspan="5">1594968129291</td><td rowspan="5">103082</td></tr><tr class="passedeven"><td><a href="#m1">IDRSDownload</a></td></tr><tr class="passedeven"><td><a href="#m2">IDRSDownload</a></td></tr><tr class="passedeven"><td><a href="#m3">IDRSDownload</a></td></tr><tr class="passedeven"><td><a href="#m4">IDRSDownload</a></td></tr></tbody>
 </table>
-<h2>LoginTest</h2><h3 id="m0">com.internetBanking.testcases.EditCustomerTest#editCustomerTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Customer does not exist!!}
-  (Session info: chrome=80.0.3987.149): Customer does not exist!!
-Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
-System info: host: &apos;LHTU05CG4472DYW&apos;, ip: &apos;10.21.226.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\da4\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:62067}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 349f4928a9c9137d70f038babd88881e
-*** Element info: {Using=xpath, value=//td[text()=&apos;Address&apos;]//following::textarea[1]}
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:123)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy13.clear(Unknown Source)
-	at com.internetBanking.pages.NewCustomer.clearAddress(NewCustomer.java:138)
-	at com.internetBanking.testcases.EditCustomerTest.editCustomerTest(EditCustomerTest.java:58)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.internetBanking.testcases.LoginTestDataDrivenTest#logindataproviderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr239668</td><td>Dhana@01</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Title is mismatched expected [Guru99 Bank Manager HomePage] but found [Guru99 Bank Home Page]
-	at com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest(LoginTestDataDrivenTest.java:63)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.internetBanking.testcases.LoginTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.internetBanking.testcases.LoginTestDataDrivenTest#logindataproviderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr252803</td><td>muqAvuq</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.internetBanking.testcases.LoginTestDataDrivenTest#logindataproviderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr252800</td><td>EjEbEza</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.internetBanking.testcases.LoginTestDataDrivenTest#logindataproviderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr252799</td><td>uzAqydA</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.internetBanking.testcases.LoginTestDataDrivenTest#logindataproviderTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr252801</td><td>pyhasAr</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.internetBanking.testcases.NewCustomerTest#newCustomerTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.internetBanking.testcases.IDRS_Download#IDRSDownload</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>1</td><td>8542011815905</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.internetBanking.testcases.IDRS_Download#IDRSDownload</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>2</td><td>8542010416000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.internetBanking.testcases.IDRS_Download#IDRSDownload</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>3</td><td>8542011564003</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.internetBanking.testcases.IDRS_Download#IDRSDownload</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>4</td><td>8542014716991</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.internetBanking.testcases.IDRS_Download#IDRSDownload</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>5</td><td>8542014716990</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	<listeners>
-		<listener
-			class-name="com.internetBanking.utilities.Reporting" />
-	</listeners>
-	<parameter name="username" value="mngr239668" />
-	<test thread-count="5" name="LoginTest">
+<suite name="Suite" thread-count="20">
+	<test name="IDRSDownloadTest">
 		<classes>
-			<class name="com.internetBanking.testcases.LoginTest" />
-			<class name="com.internetBanking.testcases.LoginTestDataDrivenTest" />
-			<class name="com.internetBanking.testcases.NewCustomerTest" />
-			<class name="com.internetBanking.testcases.EditCustomerTest" />
+			<class name="com.internetBanking.testcases.IDRS_Download" />
 		</classes>
 	</test>
 </suite> <!-- Suite -->

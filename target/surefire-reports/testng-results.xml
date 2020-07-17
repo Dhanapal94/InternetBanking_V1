@@ -1,326 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="2" ignored="0" total="7" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="128755" started-at="2019-12-28T18:32:46 IST" finished-at="2019-12-28T18:34:55 IST">
+  <suite name="Suite" duration-ms="541585" started-at="2020-07-17T13:49:29 IST" finished-at="2020-07-17T13:58:31 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="128755" started-at="2019-12-28T18:32:46 IST" finished-at="2019-12-28T18:34:55 IST">
-      <class name="com.internetBanking.testcases.LoginTest">
-        <test-method status="PASS" signature="creatingReport()[pri:0, instance:com.internetBanking.testcases.LoginTest@617faa95]" name="creatingReport" is-config="true" duration-ms="375" started-at="2019-12-28T18:32:46 IST" finished-at="2019-12-28T18:32:46 IST">
+    <test name="IDRSDownloadTest" duration-ms="541585" started-at="2020-07-17T13:49:29 IST" finished-at="2020-07-17T13:58:31 IST">
+      <class name="com.internetBanking.testcases.IDRS_Download">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.internetBanking.testcases.IDRS_Download@2641e737]" name="setUp" is-config="true" duration-ms="91951" started-at="2020-07-17T13:49:29 IST" finished-at="2020-07-17T13:51:01 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- creatingReport -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.internetBanking.testcases.LoginTest@617faa95]" name="setup" is-config="true" duration-ms="12672" started-at="2019-12-28T18:32:46 IST" finished-at="2019-12-28T18:32:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest(java.lang.String)[pri:0, instance:com.internetBanking.testcases.LoginTest@617faa95]" name="loginTest" duration-ms="1767" started-at="2019-12-28T18:32:59 IST" finished-at="2019-12-28T18:33:00 IST">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="IDRSDownload(java.lang.String, java.lang.String)[pri:0, instance:com.internetBanking.testcases.IDRS_Download@2641e737]" name="IDRSDownload" duration-ms="97478" started-at="2020-07-17T13:51:06 IST" data-provider="LoginData" finished-at="2020-07-17T13:52:43 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mngr239668]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.internetBanking.testcases.LoginTest@617faa95]" name="tearDown" is-config="true" duration-ms="277" started-at="2019-12-28T18:33:01 IST" finished-at="2019-12-28T18:33:01 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="flushingReport()[pri:0, instance:com.internetBanking.testcases.LoginTest@617faa95]" name="flushingReport" is-config="true" duration-ms="1170" started-at="2019-12-28T18:34:55 IST" finished-at="2019-12-28T18:34:56 IST">
-=======
-<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2019-12-29T22:11:29 IST" name="Suite" finished-at="2019-12-29T22:16:37 IST" duration-ms="308116">
-    <groups>
-    </groups>
-    <test started-at="2019-12-29T22:11:29 IST" name="Test" finished-at="2019-12-29T22:16:37 IST" duration-ms="308116">
-      <class name="com.internetBanking.testcases.LoginTest">
-        <test-method is-config="true" signature="creatingReport()[pri:0, instance:com.internetBanking.testcases.LoginTest@20d3d15a]" started-at="2019-12-29T22:11:26 IST" name="creatingReport" finished-at="2019-12-29T22:11:29 IST" duration-ms="3075" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- creatingReport -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.internetBanking.testcases.LoginTest@20d3d15a]" started-at="2019-12-29T22:11:29 IST" name="setup" finished-at="2019-12-29T22:12:43 IST" duration-ms="74448" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:com.internetBanking.testcases.LoginTest@20d3d15a]" started-at="2019-12-29T22:12:44 IST" name="loginTest" finished-at="2019-12-29T22:13:35 IST" duration-ms="50953" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.internetBanking.testcases.LoginTest@20d3d15a]" started-at="2019-12-29T22:13:35 IST" name="tearDown" finished-at="2019-12-29T22:13:38 IST" duration-ms="2412" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="flushingReport()[pri:0, instance:com.internetBanking.testcases.LoginTest@20d3d15a]" started-at="2019-12-29T22:16:39 IST" name="flushingReport" finished-at="2019-12-29T22:16:46 IST" duration-ms="6914" status="PASS">
->>>>>>> 62d1f656e8977f071172b532901f678195de67ec
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushingReport -->
-      </class> <!-- com.internetBanking.testcases.LoginTest -->
-      <class name="com.internetBanking.testcases.LoginTestDataDrivenTest">
-<<<<<<< HEAD
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.internetBanking.testcases.LoginTestDataDrivenTest@1e127982]" name="setup" is-config="true" duration-ms="9901" started-at="2019-12-28T18:33:01 IST" finished-at="2019-12-28T18:33:11 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="logindataproviderTest(java.lang.String, java.lang.String)[pri:0, instance:com.internetBanking.testcases.LoginTestDataDrivenTest@1e127982]" name="logindataproviderTest" duration-ms="4212" started-at="2019-12-28T18:33:14 IST" data-provider="LoginData" finished-at="2019-12-28T18:33:18 IST">
-=======
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.internetBanking.testcases.LoginTestDataDrivenTest@2893de87]" started-at="2019-12-29T22:13:38 IST" name="setup" finished-at="2019-12-29T22:13:53 IST" duration-ms="15039" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="logindataproviderTest(java.lang.String, java.lang.String)[pri:0, instance:com.internetBanking.testcases.LoginTestDataDrivenTest@2893de87]" started-at="2019-12-29T22:14:30 IST" name="logindataproviderTest" data-provider="LoginData" finished-at="2019-12-29T22:14:50 IST" duration-ms="20696" status="FAIL">
->>>>>>> 62d1f656e8977f071172b532901f678195de67ec
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr238114 ]]>
+                <![CDATA[1]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[ yrAqebE]]>
+                <![CDATA[854201181590500]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Title is mismatched expected [Guru99 Bank Manager HomePage] but found [Guru99 Bank Home Page]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Title is mismatched expected [Guru99 Bank Manager HomePage] but found [Guru99 Bank Home Page]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest(LoginTestDataDrivenTest.java:53)
-<<<<<<< HEAD
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-=======
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
->>>>>>> 62d1f656e8977f071172b532901f678195de67ec
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-<<<<<<< HEAD
-at java.util.ArrayList.forEach(Unknown Source)
-=======
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
->>>>>>> 62d1f656e8977f071172b532901f678195de67ec
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logindataproviderTest -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="logindataproviderTest(java.lang.String, java.lang.String)[pri:0, instance:com.internetBanking.testcases.LoginTestDataDrivenTest@1e127982]" name="logindataproviderTest" duration-ms="2712" started-at="2019-12-28T18:33:18 IST" data-provider="LoginData" finished-at="2019-12-28T18:33:21 IST">
-=======
-        <test-method signature="logindataproviderTest(java.lang.String, java.lang.String)[pri:0, instance:com.internetBanking.testcases.LoginTestDataDrivenTest@2893de87]" started-at="2019-12-29T22:14:54 IST" name="logindataproviderTest" data-provider="LoginData" finished-at="2019-12-29T22:15:01 IST" duration-ms="7587" status="PASS">
->>>>>>> 62d1f656e8977f071172b532901f678195de67ec
+        </test-method> <!-- IDRSDownload -->
+        <test-method status="PASS" signature="IDRSDownload(java.lang.String, java.lang.String)[pri:0, instance:com.internetBanking.testcases.IDRS_Download@2641e737]" name="IDRSDownload" duration-ms="59572" started-at="2020-07-17T13:52:43 IST" data-provider="LoginData" finished-at="2020-07-17T13:53:43 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mngr239667]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[sygavAr]]>
+                <![CDATA[854201041600000]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logindataproviderTest -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="logindataproviderTest(java.lang.String, java.lang.String)[pri:0, instance:com.internetBanking.testcases.LoginTestDataDrivenTest@1e127982]" name="logindataproviderTest" duration-ms="6433" started-at="2019-12-28T18:33:21 IST" data-provider="LoginData" finished-at="2019-12-28T18:33:28 IST">
-=======
-        <test-method signature="logindataproviderTest(java.lang.String, java.lang.String)[pri:0, instance:com.internetBanking.testcases.LoginTestDataDrivenTest@2893de87]" started-at="2019-12-29T22:15:01 IST" name="logindataproviderTest" data-provider="LoginData" finished-at="2019-12-29T22:15:06 IST" duration-ms="4485" status="PASS">
->>>>>>> 62d1f656e8977f071172b532901f678195de67ec
+        </test-method> <!-- IDRSDownload -->
+        <test-method status="PASS" signature="IDRSDownload(java.lang.String, java.lang.String)[pri:0, instance:com.internetBanking.testcases.IDRS_Download@2641e737]" name="IDRSDownload" duration-ms="59614" started-at="2020-07-17T13:53:43 IST" data-provider="LoginData" finished-at="2020-07-17T13:54:42 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mngr239668]]>
+                <![CDATA[3]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[jYsebuv]]>
+                <![CDATA[854201156400300]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logindataproviderTest -->
-<<<<<<< HEAD
-        <test-method status="FAIL" signature="logindataproviderTest(java.lang.String, java.lang.String)[pri:0, instance:com.internetBanking.testcases.LoginTestDataDrivenTest@1e127982]" name="logindataproviderTest" duration-ms="18557" started-at="2019-12-28T18:33:28 IST" data-provider="LoginData" finished-at="2019-12-28T18:33:46 IST">
-=======
-        <test-method signature="logindataproviderTest(java.lang.String, java.lang.String)[pri:0, instance:com.internetBanking.testcases.LoginTestDataDrivenTest@2893de87]" started-at="2019-12-29T22:15:06 IST" name="logindataproviderTest" data-provider="LoginData" finished-at="2019-12-29T22:15:10 IST" duration-ms="4256" status="FAIL">
->>>>>>> 62d1f656e8977f071172b532901f678195de67ec
+        </test-method> <!-- IDRSDownload -->
+        <test-method status="PASS" signature="IDRSDownload(java.lang.String, java.lang.String)[pri:0, instance:com.internetBanking.testcases.IDRS_Download@2641e737]" name="IDRSDownload" duration-ms="60200" started-at="2020-07-17T13:54:42 IST" data-provider="LoginData" finished-at="2020-07-17T13:55:43 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mngr239669]]>
+                <![CDATA[4]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[jEnunUma]]>
+                <![CDATA[854201471699100]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Title is mismatched expected [Guru99 Bank Manager HomePage] but found [Guru99 Bank Home Page]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Title is mismatched expected [Guru99 Bank Manager HomePage] but found [Guru99 Bank Home Page]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at com.internetBanking.testcases.LoginTestDataDrivenTest.logindataproviderTest(LoginTestDataDrivenTest.java:53)
-<<<<<<< HEAD
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-=======
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
->>>>>>> 62d1f656e8977f071172b532901f678195de67ec
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-<<<<<<< HEAD
-at java.util.ArrayList.forEach(Unknown Source)
-=======
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
->>>>>>> 62d1f656e8977f071172b532901f678195de67ec
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logindataproviderTest -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="logindataproviderTest(java.lang.String, java.lang.String)[pri:0, instance:com.internetBanking.testcases.LoginTestDataDrivenTest@1e127982]" name="logindataproviderTest" duration-ms="4082" started-at="2019-12-28T18:33:46 IST" data-provider="LoginData" finished-at="2019-12-28T18:33:51 IST">
-=======
-        <test-method signature="logindataproviderTest(java.lang.String, java.lang.String)[pri:0, instance:com.internetBanking.testcases.LoginTestDataDrivenTest@2893de87]" started-at="2019-12-29T22:15:11 IST" name="logindataproviderTest" data-provider="LoginData" finished-at="2019-12-29T22:15:15 IST" duration-ms="4148" status="PASS">
->>>>>>> 62d1f656e8977f071172b532901f678195de67ec
+        </test-method> <!-- IDRSDownload -->
+        <test-method status="PASS" signature="IDRSDownload(java.lang.String, java.lang.String)[pri:0, instance:com.internetBanking.testcases.IDRS_Download@2641e737]" name="IDRSDownload" duration-ms="86286" started-at="2020-07-17T13:55:43 IST" data-provider="LoginData" finished-at="2020-07-17T13:57:09 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mngr239670]]>
+                <![CDATA[5]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[qaqAgaj]]>
+                <![CDATA[854201471699000]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logindataproviderTest -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.internetBanking.testcases.LoginTestDataDrivenTest@1e127982]" name="closeBrowser" is-config="true" duration-ms="2441" started-at="2019-12-28T18:33:51 IST" finished-at="2019-12-28T18:33:53 IST">
-=======
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.internetBanking.testcases.LoginTestDataDrivenTest@2893de87]" started-at="2019-12-29T22:15:15 IST" name="closeBrowser" finished-at="2019-12-29T22:15:16 IST" duration-ms="1501" status="PASS">
->>>>>>> 62d1f656e8977f071172b532901f678195de67ec
+        </test-method> <!-- IDRSDownload -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.internetBanking.testcases.IDRS_Download@2641e737]" name="TearDown" is-config="true" duration-ms="82086" started-at="2020-07-17T13:57:09 IST" finished-at="2020-07-17T13:58:31 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.internetBanking.testcases.LoginTestDataDrivenTest -->
-      <class name="com.internetBanking.testcases.NewCustomerTest">
-<<<<<<< HEAD
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.internetBanking.testcases.NewCustomerTest@60c6f5b]" name="setup" is-config="true" duration-ms="14310" started-at="2019-12-28T18:33:53 IST" finished-at="2019-12-28T18:34:07 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="newCustomerTest()[pri:0, instance:com.internetBanking.testcases.NewCustomerTest@60c6f5b]" name="newCustomerTest" duration-ms="46771" started-at="2019-12-28T18:34:07 IST" finished-at="2019-12-28T18:34:54 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newCustomerTest -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.internetBanking.testcases.NewCustomerTest@60c6f5b]" name="closeBrowser" is-config="true" duration-ms="675" started-at="2019-12-28T18:34:54 IST" finished-at="2019-12-28T18:34:55 IST">
-=======
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.internetBanking.testcases.NewCustomerTest@55ca8de8]" started-at="2019-12-29T22:15:16 IST" name="setup" finished-at="2019-12-29T22:15:34 IST" duration-ms="17718" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="newCustomerTest()[pri:0, instance:com.internetBanking.testcases.NewCustomerTest@55ca8de8]" started-at="2019-12-29T22:15:34 IST" name="newCustomerTest" finished-at="2019-12-29T22:16:35 IST" duration-ms="61235" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newCustomerTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.internetBanking.testcases.NewCustomerTest@55ca8de8]" started-at="2019-12-29T22:16:35 IST" name="closeBrowser" finished-at="2019-12-29T22:16:37 IST" duration-ms="1824" status="PASS">
->>>>>>> 62d1f656e8977f071172b532901f678195de67ec
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.internetBanking.testcases.NewCustomerTest -->
-    </test> <!-- Test -->
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.internetBanking.testcases.IDRS_Download -->
+    </test> <!-- IDRSDownloadTest -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -1,7 +1,3 @@
-com\internetBanking\pages\NewCustomer.class
-com\internetBanking\utilities\Reporting.class
-com\internetBankings\testData\Base.class
-com\internetBanking\pages\LoginPage.class
-com\internetBanking\pages\LogoutPage.class
 com\internetBanking\utilities\XLUtils.class
 com\internetBanking\utilities\Readconfig.class
+com\internetBankings\testData\Base.class

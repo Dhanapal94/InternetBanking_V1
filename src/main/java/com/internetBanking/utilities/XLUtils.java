@@ -73,7 +73,7 @@ public class XLUtils {
 		return data;
 	}
 
-	public static void setCellData(String xlfile,String xlsheet,int rownum,int colnum,String data) throws IOException
+	public static void setCellData(String xlfile,String xlsheet,int rownum,int colnum,String data,int pathNum) throws IOException
 	{
 
 		fi=new FileInputStream(xlfile);
@@ -83,7 +83,7 @@ public class XLUtils {
 		font = wb.createFont();
 		font.setColor(IndexedColors.WHITE1.getIndex());
 		font.setBold(true);
-		if(data.equalsIgnoreCase("Pass"))
+		if(data.equalsIgnoreCase("Completed"))
 		{
 			cell=row.createCell(colnum);
 			cell.setCellValue(data);
@@ -93,15 +93,25 @@ public class XLUtils {
 	        cellStyle.setFillPattern(FillPatternType.ALT_BARS);
 	        cell.setCellStyle(cellStyle);    		
 		}
-		else if(data.equalsIgnoreCase("Fail"))
+		else if(pathNum==2)
 		{
 			cell=row.createCell(colnum);
 			cell.setCellValue(data);
 			cellStyle = wb.createCellStyle();
 	        cellStyle.setFont(font);
-	        cellStyle.setFillBackgroundColor(IndexedColors.RED1.getIndex());
+	        cellStyle.setFillBackgroundColor(IndexedColors.AUTOMATIC.getIndex());
 	        cellStyle.setFillPattern(FillPatternType.ALT_BARS);
 	        cell.setCellStyle(cellStyle);    					
+		}
+		else if(data.equalsIgnoreCase("Failed"))
+		{
+			cell=row.createCell(colnum);
+			cell.setCellValue(data);
+			cellStyle = wb.createCellStyle();
+	        cellStyle.setFont(font);
+	        cellStyle.setFillBackgroundColor(IndexedColors.RED.getIndex());
+	        cellStyle.setFillPattern(FillPatternType.ALT_BARS);
+	        cell.setCellStyle(cellStyle);    		
 		}
 		
 		fo=new FileOutputStream(xlfile);

@@ -2,8 +2,11 @@ package com.internetBanking.utilities;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
+
+import com.internetBankings.testData.Base;
 
 public class Readconfig {
 	
@@ -26,6 +29,7 @@ public class Readconfig {
 		String url = prop.getProperty("url");
 		return url;
 	}
+
 	public String chromePath()
 	{
 		String chromePath = prop.getProperty("chromepath");
@@ -46,12 +50,25 @@ public class Readconfig {
 		String pword = prop.getProperty("password");
 		return pword;
 	}
-	public String customerID()
+
+	public String driverValue()
 	{
-		String customerid = prop.getProperty("customerId");
-		return customerid;
+		String driverValue = prop.getProperty("driver");
+		return driverValue;
 	}
 	
+	public  void saveIEPathLocation() throws IOException
+	{
+		
+		String msid=Base.userMSID();
+		String location = "C:\\Users\\"+msid+"\\Documents\\IDRS Documents\\IEDriverServer.exe";
+		prop.setProperty("IEpath", location);
+		String filePath ="./Configuration\\data.properties";
+		FileOutputStream fout = new FileOutputStream(filePath);
+		prop.store(fout,"IEPath updated");	
+	
+	}
+
 
 
 }
